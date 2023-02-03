@@ -3,43 +3,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Glow Login Page</title>
+  <title>Neon Signup and Login Page</title>
   <style type="text/css">
     body {
+      font-family: sans-serif;
       background-color: #f2f2f2;
     }
 
-    .glow {
-      font-size: 20px;
-      color: #fff;
-      text-align: center;
-      -webkit-animation: glow 1s ease-in-out infinite alternate;
-      -moz-animation: glow 1s ease-in-out infinite alternate;
-      animation: glow 1s ease-in-out infinite alternate;  }
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+    }
 
-    @-webkit-keyframes glow { from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; } to { text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,0 	0 50px #ff4da6,0 	0 60px #ff4da6,0 	0 70px #ff4da6,0 	0 80px#ff4da6; } }
+    h1 { 
+      text-align: center; 
+    }
 
-    .loginForm {   width: 300px;   padding: 10% 5%;   margin: auto;}
+    input[type="text"], input[type="password"] { 
+      width: 100%; 
+      padding: 12px 20px; 
+      margin: 8px 0; 
+      display: inline-block; 
+      border: 1px solid #ccc; 
+      box-sizing: border-box; 
 
-    .loginForm input[type="text"], .loginForm input[type="password"]{   width: 100%;   padding: 10%;   margin: 5% auto 15%;   border : none;   background : rgba(255, 255 , 255 , .8);}
+    }
 
-    .loginForm input[type="submit"]{   width : 100%;   padding : 10%;   background : rgba(255 , 255 , 255 , .8);   border : none;}
+    button { 
 
-  </style>
-</head>
-<body>
+        background-color:#4CAF50 ;   /* Green */  
 
-  <div class="glow">Glow Login Page</div>
+        border: none;  
 
-  <form class="loginForm" action="" method="post">
+        color:#FFFFFF ;   /* White */  
 
-    <input type="text" name="username" placeholder="Username"/>
+        padding : 15px 32px ;  
 
-    <input type="password" name="password" placeholder="Password"/>
+        text-align : center ;  
 
-    <input type="submit" value = "Login"/>
+        text-decoration : none ;  
 
-  </form>
+        display : inline - block ;  
 
-  <script type = "text/javascript"> // JavaScript code goes here </script>
-</body>
+        font - size : 16px ;  
+
+     }    
+
+     .signupbtn{background-color:#4CAF50;} /* Green */     .loginbtn{background-color:#008CBA;} /* Blue */     .cancelbtn{background-color:#f44336;} /* Red */     .resetbtn{background-color:#555555;} /* Gray */       .resetbtn, .signupbtn, .loginbtn, .cancelbtn {float : left ; font - size : 16 px ;}       .container a {text - decoration : none ; font - size : 12 px ; color : black ;}       .clearfix::after {content:""; clear : both ; display : table;}       @media screen and (max - width : 300 px ){.cancelbtn ,.signupbtn ,.loginbtn ,.resetbtn{width : 100 %}} </style> </head> <body> <div class="container"> <h1>Neon Signup and Login Page</h1> <!-- Sign Up Form --> <form action="/action_page.php" style="border:1px solid #ccc"> <div class="container"> <h1>Sign Up</h1> <p>Please fill in this form to create an account.</p> <hr /> <label for="email"><b>Email</b></label><br /> <input type="text" placeholder="Enter Email" name="email" required /><br /> <label for="psw"><b>Password</b></label><br /> <input type="password" placeholder="Enter Password" name="psw" required /><br /> <label for="pswrepeat"><b>Repeat Password</b></label><br /> <input type="password" placeholder="Repeat Password" name="pswrepeat" required /><br /> <!-- Submit Button --> <div class = "clearfix">        	<button type = "button" class = "cancelbtn">Cancel</button >        	<button type = "submit" class = "signupbtn">Sign Up</button >       </div > </div > </form > <!-- Login Form -->	<form action="/action_page.php" style = "border : 1 px solid #ccc">		<div class = "container">			<h1 > Login </h1 >			<p > Please fill in this form to log in. </p >			<hr/>			<label for = "email"><b > Email </b></label ><br/>            <input type = "text" placeholder = "Enter Email" name = "email" required/ ><br/>            <label for = "psw"><b > Password </b></label ><br/>            <input type = "password" placeholder = "Enter Password" name = "psw" required/ ><br/>            <!-- Submit Button -->            <div class=clearfix>"            	<button type=button class=cancelbtn onclick=window.location='index.html'>Cancel</button>"            	<button type=submit class=loginbtn onclick=window.location='index.html'>Login</button>"            	<a href=# style=float right;"            	Forgot password?</a>"            </div>"         </div>"     </form>" <!-- Reset Form -->     "<form action=/action_page.php style=border 1px solid #ccc>"         "<div class=container>"             "<h1 Reset Password/h1>"             "<p Please fill in this form to reset your password./p>"             "<hr/>""             "<label for email><b Email/b></label><br/>""             "<input type text placeholder Enter Email name email required/><br/>""             "<!-- Submit Button -->""             "<div class clearfix>"                 "<button type button class cancelbtn onclick window location='index html'>Cancel/button""                 "<button type submit class resetbtn onclick window location='index html'>Reset/button""                 ""              "/div/"          "/div/"     "/form/" "/body/" "/html/"
