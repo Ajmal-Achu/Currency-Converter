@@ -1,54 +1,66 @@
-
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Neon Signup and Login Page</title>
-  <style type="text/css">
-    body {
-      font-family: sans-serif;
-      background-color: #f2f2f2;
-    }
+  <head>
+    <title>Instagram Downloader</title>
+    <style type="text/css">
+      body {
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+      }
 
-    .container {
-      width: 500px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-    }
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+      }
 
-    h1 { 
-      text-align: center; 
-    }
+      input[type="text"] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        box-sizing: border-box; 
 
-    input[type="text"], input[type="password"] { 
-      width: 100%; 
-      padding: 12px 20px; 
-      margin: 8px 0; 
-      display: inline-block; 
-      border: 1px solid #ccc; 
-      box-sizing: border-box; 
+      }
 
-    }
+      button { 
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 14px 20px; 
+        margin: 8px 0; 
 
-    button { 
+      }
 
-        background-color:#4CAF50 ;   /* Green */  
+    </style>  
 
-        border: none;  
+    <script type="text/javascript">
 
-        color:#FFFFFF ;   /* White */  
+      function downloadImage() {
 
-        padding : 15px 32px ;  
+          var url = document.getElementById("url").value; // Get the URL from the input field.
 
-        text-align : center ;  
+          if (url == "") { // Check if the URL is empty. If so, show an alert.
 
-        text-decoration : none ;  
+              alert("Please enter a valid Instagram URL!"); // Show an alert message.
 
-        display : inline - block ;  
+          } else { // If the URL is not empty, proceed with the download.
 
-        font - size : 16px ;  
+              window.open(url); // Open the URL in a new window. This will trigger the download of the image.  
 
-     }    
+          }  
 
-     .signupbtn{background-color:#4CAF50;} /* Green */     .loginbtn{background-color:#008CBA;} /* Blue */     .cancelbtn{background-color:#f44336;} /* Red */     .resetbtn{background-color:#555555;} /* Gray */       .resetbtn, .signupbtn, .loginbtn, .cancelbtn {float : left ; font - size : 16 px ;}       .container a {text - decoration : none ; font - size : 12 px ; color : black ;}       .clearfix::after {content:""; clear : both ; display : table;}       @media screen and (max - width : 300 px ){.cancelbtn ,.signupbtn ,.loginbtn ,.resetbtn{width : 100 %}} </style> </head> <body> <div class="container"> <h1>Neon Signup and Login Page</h1> <!-- Sign Up Form --> <form action="/action_page.php" style="border:1px solid #ccc"> <div class="container"> <h1>Sign Up</h1> <p>Please fill in this form to create an account.</p> <hr /> <label for="email"><b>Email</b></label><br /> <input type="text" placeholder="Enter Email" name="email" required /><br /> <label for="psw"><b>Password</b></label><br /> <input type="password" placeholder="Enter Password" name="psw" required /><br /> <label for="pswrepeat"><b>Repeat Password</b></label><br /> <input type="password" placeholder="Repeat Password" name="pswrepeat" required /><br /> <!-- Submit Button --> <div class = "clearfix">        	<button type = "button" class = "cancelbtn">Cancel</button >        	<button type = "submit" class = "signupbtn">Sign Up</button >       </div > </div > </form > <!-- Login Form -->	<form action="/action_page.php" style = "border : 1 px solid #ccc">		<div class = "container">			<h1 > Login </h1 >			<p > Please fill in this form to log in. </p >			<hr/>			<label for = "email"><b > Email </b></label ><br/>            <input type = "text" placeholder = "Enter Email" name = "email" required/ ><br/>            <label for = "psw"><b > Password </b></label ><br/>            <input type = "password" placeholder = "Enter Password" name = "psw" required/ ><br/>            <!-- Submit Button -->            <div class=clearfix>"            	<button type=button class=cancelbtn onclick=window.location='index.html'>Cancel</button>"            	<button type=submit class=loginbtn onclick=window.location='index.html'>Login</button>"            	<a href=# style=float right;"            	Forgot password?</a>"            </div>"         </div>"     </form>" <!-- Reset Form -->     "<form action=/action_page.php style=border 1px solid #ccc>"         "<div class=container>"             "<h1 Reset Password/h1>"             "<p Please fill in this form to reset your password./p>"             "<hr/>""             "<label for email><b Email/b></label><br/>""             "<input type text placeholder Enter Email name email required/><br/>""             "<!-- Submit Button -->""             "<div class clearfix>"                 "<button type button class cancelbtn onclick window location='index html'>Cancel/button""                 "<button type submit class resetbtn onclick window location='index html'>Reset/button""                 ""              "/div/"          "/div/"     "/form/" "/body/" "/html/"
+      }  
+
+    </script>  
+
+  </head>  
+
+  <body>    
+
+    <div class="container">      
+
+      <h1>Instagram Downloader</h1>      
+
+      <p>Enter an Instagram image or video URL to download it.</p>      
+
+      <input type="text" id="url" placeholder="Enter Instagram URL here..." />      														                                                                                                                            <!-- Input field for entering an Instagram URL -->      	     <!-- Button for triggering the download -->       <!-- Button for triggering the download -->       <!-- Button for triggering the download -->       <!-- Button for triggering the download -->       <!-- Button for triggering the download -->       <!-- Button for triggering the download -->       <!-- Button for triggering the download -->     </div>   </body> </html
