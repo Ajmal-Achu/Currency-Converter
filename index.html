@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glow Login Page</title>
+  <style type="text/css">
+    body {
+      background-color: #f2f2f2;
+    }
+
+    .glow {
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;  }
+
+    @-webkit-keyframes glow { from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; } to { text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,0 	0 50px #ff4da6,0 	0 60px #ff4da6,0 	0 70px #ff4da6,0 	0 80px#ff4da6; } }
+
+    .loginForm {   width: 300px;   padding: 10% 5%;   margin: auto;}
+
+    .loginForm input[type="text"], .loginForm input[type="password"]{   width: 100%;   padding: 10%;   margin: 5% auto 15%;   border : none;   background : rgba(255, 255 , 255 , .8);}
+
+    .loginForm input[type="submit"]{   width : 100%;   padding : 10%;   background : rgba(255 , 255 , 255 , .8);   border : none;}
+
+  </style>
+</head>
+<body>
+
+  <div class="glow">Glow Login Page</div>
+
+  <form class="loginForm" action="" method="post">
+
+    <input type="text" name="username" placeholder="Username"/>
+
+    <input type="password" name="password" placeholder="Password"/>
+
+    <input type="submit" value = "Login"/>
+
+  </form>
+
+  <script type = "text/javascript"> // JavaScript code goes here </script>
+</body>
